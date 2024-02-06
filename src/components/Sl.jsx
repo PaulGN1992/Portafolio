@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import Glide from "@glidejs/glide"
+import Glide from '@glidejs/glide/dist/glide.esm'
 
 export default function CarouselLogo() {
   useEffect(() => {
@@ -8,7 +8,7 @@ export default function CarouselLogo() {
       autoplay: 1,
       animationDuration: 4500,
       animationTimingFunc: "linear",
-      perView: 5,
+      perView: 3,
       classes: {
         nav: {
           active: "[&>*]:bg-wuiSlate-700",
@@ -16,10 +16,10 @@ export default function CarouselLogo() {
       },
       breakpoints: {
         1024: {
-          perView: 3,
+          perView: 2,
         },
         640: {
-          perView: 2,
+          perView: 1,
           gap: 36,
         },
       },
@@ -73,7 +73,6 @@ export default function CarouselLogo() {
                 className="m-auto h-20 max-h-full w-auto max-w-full"
               />
             </li>
-
           </ul>
         </div>
       </div>
