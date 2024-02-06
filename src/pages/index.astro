@@ -1,13 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Sl from '../components/Sl';
+import Logo from '../../public/LogoFondoNegro.astro';
+import LogoInverso from '../../public/LogoFondoNegroInverso.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-	<div class="bg-green-500/10">
+<Layout title="Portafolio PaulGN - Desarrollador Web">
+	<div class="w-full flex bg-negroPg justify-between p-5 items-center">
+		<Logo class=""/>
+		<h1 class=" w-8/12 text-4xl  text-center text-pretty font-bold ">Paul Gamarra Neglia</h1>
+		<LogoInverso class="" />
+	</div>
+	<div class="w-full bg-grisPg ">
 		<div class="overflow-hidden">
-			<Sl client:visible/>
+			<Sl client:load />
 		</div>
+	</div>
+	<div class="w-full flex bg-negroPg justify-between p-5 items-center">
+		<Logo class=""/>
+		<h1 class=" w-8/12 text-4xl shrink-0 text-center truncate ">Portajsdjckbsdkjcbkjsd  sdjc jsdcnkjsdcnjksd  cjnsdlkcnjksdl  sdjcnlskdn ckl  sdklcslkdcfolioddd</h1>
+		<LogoInverso class="" />
+	</div>
+	<div class="w-full flex bg-negroPg justify-between p-5 items-center">
+		<Logo class=""/>
+		<h1 class=" w-8/12 text-4xl shrink-0 text-center truncate ">Portajsdjckbsdkjcbkjsd  sdjc jsdcnkjsdcnjksd  cjnsdlkcnjksdl  sdjcnlskdn ckl  sdklcslkdcfolioddd</h1>
+		<LogoInverso class="" />
+	</div>
+	<div id='about'class="w-full flex bg-negroPg justify-between p-5 items-center">
+		<Logo class=""/>
+		<h1 class=" w-8/12 text-4xl shrink-0 text-center truncate ">PortajGGGgggsdkjcbkjsd  sdjc jsdcnkjsdcnjksd  cjnsdlkcnjksdl  sdjcnlskdn ckl  sdklcslkdcfolioddd</h1>
+		<LogoInverso class="" />
 	</div>
 </Layout>
 
