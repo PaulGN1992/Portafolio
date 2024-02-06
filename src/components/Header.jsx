@@ -108,7 +108,7 @@ export default function Header() {
                   role="menuitem"
                   aria-haspopup="false"
                   className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-teal-500 focus:text-teal-600 focus:outline-none focus-visible:outline-none lg:px-8"
-                  href="javascript:void(0)"
+                  href="/contacto"
                 >
                   <span>Contacto</span>
                 </a>
