@@ -6,35 +6,39 @@ import LogoInverso from '../../public/LogoFondoNegroInverso.astro'
 ---
 
 <Layout title="Portafolio PaulGN - Desarrollador Web">
-	<div class="w-full flex bg-negroPg justify-between p-5 items-center">
-		<Logo class=""/>
-		<h1 class=" w-8/12 text-4xl  text-center text-pretty font-bold ">Paul Gamarra Neglia</h1>
-		<LogoInverso class="" />
-	</div>
-	<div class="w-full bg-grisPg ">
-		<div class="overflow-hidden">
+	<div class="w-full relative  ">
+		<div class="w-full flex flex-col md:flex-row md:items-center justify-center gap-[8%] px-10 -ml-3 items-center ">
+				<Logo class="md:sticky top-10 z-20 size-40 min-w-48 md:size-80 lg:w-/12"/>
+				<div class="">
+
+					<h1 class="w-full rounded-xl mx-2 bg-negroPg text-3xl text-center font-bold "><p>Hey there! </p>I'm Paul Gamarra Neglia</h1>
+					<h1 class="w-full rounded-xl mx-2 bg-negroPg text-3xl text-center font-bold "><p>Hey there! </p>I'm Paul Gamarra Neglia</h1>
+					<h1 class="w-full rounded-xl mx-2 bg-negroPg text-3xl text-center font-bold "><p>Hey there! </p>I'm Paul Gamarra Neglia</h1>
+					<h1 class="w-full rounded-xl mx-2 bg-negroPg text-3xl text-center font-bold "><p>Hey there! </p>I'm Paul Gamarra Neglia</h1>
+			</div>
+			<div class="w-full absolute inset-0 -z-20">
+				<div class="overflow-hidden">
+					<svg
+					preserveAspectRatio="none"
+					width="100%"
+					height="20%"
+					viewBox="0 0 1200 120"
+					xmlns="http://www.w3.org/2000/svg"
+					  fill="#f4422a"
+					  >
+					  <path d="M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z" />
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="overflow-hidden flex justify-center">
 			<Sl client:load />
 		</div>
+		<div class=" absolute inset-0 text-5xl bg-[linear-gradient(90deg,#161616,transparent_20%,transparent_80%,#161616)]"></div>
 	</div>
-	<div class="w-full flex bg-negroPg justify-between p-5 items-center">
-		<Logo class=""/>
-		<h1 class=" w-8/12 text-4xl shrink-0 text-center truncate ">Portajsdjckbsdkjcbkjsd  sdjc jsdcnkjsdcnjksd  cjnsdlkcnjksdl  sdjcnlskdn ckl  sdklcslkdcfolioddd</h1>
-		<LogoInverso class="" />
-	</div>
-	<div class="w-full flex bg-negroPg justify-between p-5 items-center">
-		<Logo class=""/>
-		<h1 class=" w-8/12 text-4xl shrink-0 text-center truncate ">Portajsdjckbsdkjcbkjsd  sdjc jsdcnkjsdcnjksd  cjnsdlkcnjksdl  sdjcnlskdn ckl  sdklcslkdcfolioddd</h1>
-		<LogoInverso class="" />
-	</div>
-	<div id='about'class="w-full flex bg-negroPg justify-between p-5 items-center">
-		<Logo class=""/>
-		<h1 class=" w-8/12 text-4xl shrink-0 text-center truncate ">PortajGGGgggsdkjcbkjsd  sdjc jsdcnkjsdcnjksd  cjnsdlkcnjksdl  sdjcnlskdn ckl  sdklcslkdcfolioddd</h1>
-		<LogoInverso class="" />
-	</div>
+		<!-- <LogoInverso class="fixed z-20 bottom-0 size-40 min-w-48 md:size-80 lg:w-4/12"/> -->
+		
+	
+
 </Layout>
 
-<style>
-	main {
-	}
-	
-</style>

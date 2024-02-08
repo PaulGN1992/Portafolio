@@ -8,25 +8,29 @@ export default function NavbarActionButtonPreview({path, children}) {
   return (
     <>
       {/*<!-- Component: Navbar with CTA --> */}
-      <header className="sticky text-xl font-bold top-0 left-0 z-20 w-full max-h-16 bg-naranjaPg shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-negroPg lg:backdrop-blur-sm lg:after:hidden">
-        <div className="relative mx-auto max-w-full px-6">
+      <header className="sticky text-xl font-bold top-0 left-0 z-20 w-full max-h-16 bg-grisPg/30 s shadow-pink-700 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-negroPg lg:backdrop-blur-sm lg:after:hidden">
+        <div className=" mx-auto max-w-full px-6">
           <nav
             aria-label="main navigation"
             className="flex max-h-14 items-stretch justify-between font-medium text-blancoPg"
             role="navigation"
           >
             {/*      <!-- Brand logo --> */}
+            <div className="flex  items-center gap-2 py-3 text-lg focus:outline-none lg:flex-1">
             <a
-              id="WindUI"
-              aria-label="WindUI logo"
-              aria-current="page"
-              className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
+              id="logo"
+              aria-current={path=== '/' ? 'page' : null}
               href="/"
-            >
-              Brand
+              className="contents "
+              >
+            <img className='size-12 hover:brightness-200' 
+             src="\pb-fNegro-02.svg" 
+             alt="logo-PaulGn"
+             aria-label="logo PaulGN" />
+            <h2 class='hidden md:inline-block  hover:brightness-200' >Paul Gamarra Neglia</h2>
             </a>
-            <children/>
             {/*      <!-- Mobile trigger --> */}
+            </div>
             <button
               className={`relative order-10 block h-10 w-10 self-center lg:hidden
               ${
@@ -42,15 +46,15 @@ export default function NavbarActionButtonPreview({path, children}) {
               <div className="absolute top-1/2 left-1/2 w-6 -translate-x-1/2 -translate-y-1/2 transform">
                 <span
                   aria-hidden="true"
-                  className="absolute block h-0.5 w-9/12 -translate-y-2 transform rounded-full bg-slate-900 transition-all duration-300"
+                  className="absolute block h-0.5 w-9/12 -translate-y-2 transform rounded-full bg-blancoPg transition-all duration-300"
                 ></span>
                 <span
                   aria-hidden="true"
-                  className="absolute block h-0.5 w-6 transform rounded-full bg-slate-900 transition duration-300"
+                  className="absolute block h-0.5 w-6 transform rounded-full bg-blancoPg transition duration-300"
                 ></span>
                 <span
                   aria-hidden="true"
-                  className="absolute block h-0.5 w-1/2 origin-top-left translate-y-2 transform rounded-full bg-slate-900 transition-all duration-300"
+                  className="absolute block h-0.5 w-1/2 origin-top-left translate-y-2 transform rounded-full bg-blancoPg transition-all duration-300"
                 ></span>
               </div>
             </button>
@@ -68,6 +72,7 @@ export default function NavbarActionButtonPreview({path, children}) {
                 <a
                   role="menuitem"
                   aria-haspopup="false"
+                  aria-current={path=== '/' ? 'page' : null}
                   className={` text-blancoPg hover:brightness-200
                   ${path == '/'? 'underline decoration-limaPg ': ''}
                   flex items-center gap-2 py-4 transition-colors duration-300 focus:text-limaPg focus:outline-none 
@@ -80,7 +85,7 @@ export default function NavbarActionButtonPreview({path, children}) {
               <li role="none" className="flex items-stretch">
                 <a
                   role="menuitem"
-                  aria-current="page"
+                  aria-current={path=== '/about' ? 'page' : null}
                   aria-haspopup="false"
                   className={` text-blancoPg hover:brightness-200 
                   ${path == '/about'? 'underline decoration-limaPg ': ''}
@@ -95,6 +100,7 @@ export default function NavbarActionButtonPreview({path, children}) {
                 <a
                   role="menuitem"
                   aria-haspopup="false"
+                  aria-current={path=== '/contacto' ? 'page' : null}
                   className={` text-blancoPg hover:brightness-200 
                   ${path == '/contacto'? 'underline decoration-limaPg ': ''}
                   flex items-center gap-2 py-4 transition-colors duration-300  focus:text-limaPg focus:outline-none 

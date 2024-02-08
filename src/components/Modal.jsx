@@ -76,7 +76,7 @@ export default function ModalBasic() {
   }, [isShowing])
 
   return (
-    <>
+    < slot name='modal'>
       <button
         onClick={() => setIsShowing(true)}
         className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-emerald-500 px-5 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-emerald-600 focus:bg-emerald-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none"
@@ -148,6 +148,6 @@ export default function ModalBasic() {
             document.body
           )
         : null}
-    </>
+    </slot>
   )
 }

@@ -8,7 +8,7 @@ export default function CarouselLogo() {
       autoplay: 1,
       animationDuration: 4500,
       animationTimingFunc: "linear",
-      perView: 3,
+      perView: 4,
       classes: {
         nav: {
           active: "[&>*]:bg-wuiSlate-700",
@@ -33,7 +33,7 @@ export default function CarouselLogo() {
   return (
     <>
       {/*<!-- Component: Testimonial carousel --> */}
-      <div className="glide-09 relative w-full">
+      <div className="glide-09 block w-6/12 [mask-image:linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
         {/* <!-- Slides --> */}
         <div data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
